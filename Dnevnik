@@ -1,1 +1,10 @@
 # 14.09.2019
+""" Praca z GitHUB
+1. Klonujemy repozytorium - "git clone adres_repozytorium"
+2. Po zmianie pliku przygotowujemy go do dodania
+"git add nazwa_pliku" (jeżeli chcemy wskazać konkretny plik),
+"git add ." (jeżeli chcemy dodać wszystkie zmienione pliki)
+3. Dodajemy komentarz ze zmnianami "git commit -m "nazwa_commita""
+4. Wypychamy go do GitHUB "git push"  lub "gitpush origin master"
+5. Jeżeli chcemy oddać na sprawdzenie lub do koncowego projektu na samym GitHUB używamy "pull request"
+"""
