@@ -19,7 +19,7 @@ d = [15] Zmienna Typu List (Lista)
 e = (15,15) Zmienna Typu Tuple (Lista której się nie da zmienić zawartości)
 g = {15} Zmeinna Typu Set, (Zbiór,w którym nie ma dwóch lub więcej identycznych elementów )
 h = {15:15} Zmienna Typu Dict  (Slownik {Klucz:Wartość})
-j = range(15) Zmienna typu Range (od 0 do 15)
+j = range(15) Zmienna typu Range (od 0 do 14)
 k = True Zmienna typu Bool (Wartośc logiczna, Prawda lub Falsz)
 
 """
@@ -33,3 +33,89 @@ Podniesienie do stopnia 3**2 --->>> 9
 Perwiastek   import math   math.sqrt(9) ----->>>>>> 3.0
 Dzielenie bez reszty  81 // 2 ------>>>>> 40
 Wynik reszty od Dzielenia 81 % 2 ----->>>> 1
+
+"""
+3. Warunki Pętla for/ Pętla While / If / Elif / Else  / Pass
+"""
+Pętla for przebiega po wszystkim danym (liczbam) w podanym zakresie sprawdza i daje spełnia ten warunek, który chcemy zarobić z tym zestawem dannych
+
+
+for number in range (5):   # Dla Wszystkich liczb w zakresie od 0 do 4 (5-1) ,
+    print(number)          #wydrukuj ich znaczenie
+--->>>
+0
+1
+2
+3
+4
+
+
+Winter_Month = ["Grudzień", "Styczeń", "Luty"]  # Podana lista z Miesiacami Zimowymi
+for month in Winter_Month:   #Dla każdego miesiąca w Miesiącach zimowych
+    print(month)            # Wydrukuj jego nazwe
+--->>>
+Grudzień
+Styczeń
+Luty
+
+Summer = "Lato"    #Podany napis Summer o znaczeniu "Lato"
+for letters in Summer: # dla kazdej litery w napisie "Lato"
+    print(letters) # Wydrukuj jej znaczenie
+--->>>
+L
+a
+t
+o
+##############################################################################
+
+Pętla while wykonuje się dopóki jakiś warunek logiczny jest spełniony
+
+start = 0   # Start  = 0
+while start < 5:  # Dopoki start jest mniejszy od 5
+    print (start), # Drukuj Wszystkie liczby od 0 do tej liczby która mniejsza od 5
+    start += 1  # Start po każdym sprawdzeniu liczby zwiększa się o 1
+--->>>
+0
+1
+2
+3
+4
+
+##########################################################################
+Warunek if sprawdza czy zachodzi modelowana nami sytuacja i w zależności od sytuacji daje oczekiwany Wynik
+
+for letter in 'hello world':  #Dla każdej litery w wyrazie "hello world"
+    if letter == 'h':  # jeżeli jedna z litter równa się h
+        print("Yes")  # wydrukuj słowo Yes
+
+--->>> Yes
+
+#############################################################################
+Warunek elif dodatkowo sprawdza po if czy zachodzi jakaś inna modelowana sytuacja
+
+for letter in 'hello world': #Dla każdej litery w wyrazie "hello world"
+    if letter == 'x':  # jeżeli jedna z litter równa się x
+        print("Yes")  # wydrukuj słowo Yes, w dannym przypadku żadna littera nie równa sie "x"
+    elif letter == "e": # sprawdzamy dalej , jeżeli if się nie odbylo to jest Elif, sprawdzamy czy littera "e" jest w wyrazie
+        print("Yes")  # taka littera jest, dla tego drukujemyu "Yes"
+
+--->>> Yes
+
+#############################################################################
+
+Warunek else wykonuje swoje zadanie w razie gdy pierwszy zadanny warunek nie wykonuje się
+
+for letter in 'hello world': #Dla każdej litery w wyrazie "hello world"
+    if letter == 'x':# jeżeli jedna z litter równa się x
+        print("Yes") # wydrukuj słowo Yes
+else:  # w innym przypadku
+    print("No")        #wydrukuj "No"
+#Sprawdzamy czy litera jest w wyrazie, okazuję się że jej nie ma, wychodzimy z pętli i drukujemy "No"
+
+--->>> No
+##############################################################################
+Warunek pass , warunek w przypadku jego zaistnienia , nic się nie zwraca i nie druje sie, pomaga nie wywalać blędu programu gdy nie chemy żadnego wyniki pewnej sytuacji
+
+for letter in 'hello world': #Dla każdej litery w wyrazie "hello world"
+    if letter == 'h':  # jeżeli jedna z litter równa się x
+            pass  # nic nie rób , zakończ dany warunek bez rezultatu
