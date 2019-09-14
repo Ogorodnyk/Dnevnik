@@ -8,3 +8,28 @@
 4. Wypychamy go do GitHUB "git push"  lub "gitpush origin master"
 5. Jeżeli chcemy oddać na sprawdzenie lub do koncowego projektu na samym GitHUB używamy "pull request"
 """
+########################################################################
+"""
+1. Zmienne w Pythonie
+"""
+a = 15  Zmienna Typu Int (Liczba Całkowita)
+b = 15.0 Zmienna Typu Float (Liczba Naturalna)
+c = "15" Zmienna Typu String (Napis)
+d = [15] Zmienna Typu List (Lista)
+e = (15,15) Zmienna Typu Tuple (Lista której się nie da zmienić zawartości)
+g = {15} Zmeinna Typu Set, (Zbiór,w którym nie ma dwóch lub więcej identycznych elementów )
+h = {15:15} Zmienna Typu Dict  (Slownik {Klucz:Wartość})
+j = range(15) Zmienna typu Range (od 0 do 15)
+k = True Zmienna typu Bool (Wartośc logiczna, Prawda lub Falsz)
+
+"""
+2. Operacje aryfmetyczne
+"""
+Dodawanie    3 + 2 ---->>>> 5
+Odejmowanie  3 - 2 ---->>>> 1
+Dzielenie    3/2 ----->>>>> 1.5
+Mnożenie     3*2 ----->>>>> 6
+Podniesienie do stopnia 3**2 --->>> 9
+Perwiastek   import math   math.sqrt(9) ----->>>>>> 3.0
+Dzielenie bez reszty  81 // 2 ------>>>>> 40
+Wynik reszty od Dzielenia 81 % 2 ----->>>> 1
