@@ -114,8 +114,50 @@ else:  # w innym przypadku
 
 --->>> No
 ##############################################################################
-Warunek pass , warunek w przypadku jego zaistnienia , nic się nie zwraca i nie druje sie, pomaga nie wywalać blędu programu gdy nie chemy żadnego wyniki pewnej sytuacji
+Warunek pass , warunek w przypadku jego zaistnienia , nic się nie zwraca i nie drukuje sie, pomaga nie wywalać blędu programu gdy nie chemy żadnego wyniki pewnej sytuacji
 
 for letter in 'hello world': #Dla każdej litery w wyrazie "hello world"
     if letter == 'h':  # jeżeli jedna z litter równa się x
             pass  # nic nie rób , zakończ dany warunek bez rezultatu
+
+
+"""4. Tworzenie funkcji """
+def square(num):   # def określa że tworzymy funckję, pod def idzie nazwa funckji "square" i jakie dane jej musimy podać "num"
+    return num ** 2 # funckja zwraca podanną wartość "num " podniesioną do drugiej potęgi
+
+def square_print(num): # "def" (tworzymy funckje) square_print(o nazwie) , pobieramy num(wartość)
+    print(num ** 2) # funckja drukuje num podniesiony do drugiej potęgi
+
+Opcja return zwraca jakiś wynik i póżniej my możemy z tym wynikiem coś zrobić, natomiast print po prostu drukuje jakiś tekst
+
+def func(a,b):  # funckja przyjmuje dwa paramtry (a , b....mogą byc jakiekolwiek dane)
+    return a+b  # Zwraca sume dwoch paramtetro
+
+def func2():  # funkcja nie przejmuje paramentrow
+    a = 10  # a = 10
+    b = 11  # b = 11
+    suma = func(a,b) # okresamy ze zmienna suma == funckjci funkc ktora dodaje dwie zmienne
+    print(suma)  # drukujemy sume
+
+print(func(5,6))    ----->>>>> 11
+func2()             ----->>>>> 21
+func2(1,2)             ----->>>>> TypeError: func2() takes 0 positional arguments but 2 were given
+
+W powyzszych przykladach func zwraca sume dodawania dwóch zmiennych, a func dwa tylko drukuje.
+Przykład z życia :
+Stoisz w kolejce za wypłatą, nadeszła twoja kolej i kasjer mówi:
+print - "Tutaj jest twoja wypłata" , pokazuje wypłatę i chowa z powrotem
+return Kasjer wydaje tobie wypłate
+
+return zwraca znaczenie z funkcji , print natomiast jest sama w sobie funckją , która wykonuje drukowanie wyrazu
+
+""" 5. Opcjonalny argument w funcji """
+
+Opcjonalny argument w funckji, jest to argument , który bierze udział w funcji, lecz nie musi być podawany przez użytkowanika
+Jeżeli użytkownik go nie poda to on będzie zawsze taki jaki jest podany przy tworzeniu funckcji
+tworzymy go za pomocą znaku równości =
+
+def power(base, exponent=2):
+    return base**2
+
+print(power(3))  ------->>>>>>>>> 9 
